@@ -1,0 +1,193 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FamilyTree.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApplicationConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;; Extended Properties =  "Text;HDR=YES;FMT=Delimited; Excel 8.0;IMEX=1" &lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">; Extended Properties =  "Text;HDR=YES;FMT=Delimited; Excel 8.0;IMEX=1" </Value>
+    </Setting>
+    <Setting Name="ApplicationEncryptedFilePathAndName_Deprecated" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:/Program Files/GSGALE/FamilyTree V0.96/Resources/FamilyTree.csv</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxSelectionHeight" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">530</Value>
+    </Setting>
+    <Setting Name="FamilyTreeControlLevelDepthToDisplay" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="ApplicationTestingMode" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FamilyTreeControlSortOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Relationship_Level, DOB ASC</Value>
+    </Setting>
+    <Setting Name="ApplicationIconFileName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ODA_32.ico</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxColumnOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Family_Name</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxSortOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Family_Name ASC, DOB ASC</Value>
+    </Setting>
+    <Setting Name="FamilyTreeControlHighlightScreeningClearences" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Screening_Determination = 'CLEARED'</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxHideColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Person_SK, Relationship_Level, Anchor_Person_SK, Family_Name, Related_Person_SK,Related_Person_SK_Tree,Person_SK_Tree, Relatives Cleared</Value>
+    </Setting>
+    <Setting Name="ChildSelectedDataGridViewSortOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Person_SK</Value>
+    </Setting>
+    <Setting Name="ChildSelectedDataGridViewHideColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Person_SK, Relationship_Level, Anchor_Person_SK, Family_Name, Related_Person_SK,Related_Person_SK_Tree,Person_SK_Tree, Relatives Cleared</Value>
+    </Setting>
+    <Setting Name="ApplicationCreatedByDepartment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Department of the Premier and Cabinet</Value>
+    </Setting>
+    <Setting Name="ApplicationCreatedByBusinessGroup" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Office for Data Analytics</Value>
+    </Setting>
+    <Setting Name="ApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Child Commercial Care Family Tree</Value>
+    </Setting>
+    <Setting Name="ApplicationClassificationLevel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Classified</Value>
+    </Setting>
+    <Setting Name="ApplicationInitialDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\GSGALE\FamilyTree</Value>
+    </Setting>
+    <Setting Name="ApplicationFormNormalHeight" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">830</Value>
+    </Setting>
+    <Setting Name="ApplicationFormNormalWidth" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1090</Value>
+    </Setting>
+    <Setting Name="ApplicationFormExtendedHeight" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">830</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxToolTip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Search for individuals from a known list.  Listing is Surname, First Name then Middle Name. Clear Search box for complete list.</Value>
+    </Setting>
+    <Setting Name="FamilyTreeControlToolTip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Displays 'Family Tree' of individuals related to the selected Child.  Individuals with some form of Security Clearance are highlighted.</Value>
+    </Setting>
+    <Setting Name="ChildSelectedDataGridToolTip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Displays selected child information.   </Value>
+    </Setting>
+    <Setting Name="ApplicationMaximiseButton" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FormExpandAllCommandButtonExpandText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Expand All</Value>
+    </Setting>
+    <Setting Name="FormExpandAllCommandButtonCollapseText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Collapse All</Value>
+    </Setting>
+    <Setting Name="SQL4Application" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT * 
+
+,Family_Name + ', ' + First_Given_Name + ' ' +  iif(Second_Given_Name IS NOT NULL, Second_Given_Name  ,"") AS [FullName]
+
+,Family_Name + ', ' + First_Given_Name + ' ' +  iif(Second_Given_Name IS NOT NULL, Second_Given_Name  ,"") + iif(Relationship_Name IS NOT NULL,  ' (' + Relationship_Name + ')' ,"") AS [FullNameWithRelationship]  
+
+,iif(Gender_Code="M", "Male","Female") AS Gender
+
+, Count_Screened_Relative AS [Relatives Cleared]
+
+, Birth_Date AS [DOB]
+
+, [Address_Line] + ' ' + [Suburb] + ', ' + [Post_Code] AS [Address]
+
+, [Suburb] + ', ' + [Post_Code] AS [Address 2]
+
+FROM</Value>
+    </Setting>
+    <Setting Name="ChildSelectedDataGridViewShowColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Relatives Cleared</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxShowColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Relatives Cleared</Value>
+    </Setting>
+    <Setting Name="ChildSelectedDataGridViewColumnOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Relatives Cleared</Value>
+    </Setting>
+    <Setting Name="HighlightedFont" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Verdana</Value>
+    </Setting>
+    <Setting Name="HighlightedBackColour" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Gainsboro</Value>
+    </Setting>
+    <Setting Name="HighlightedFontColour" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="HighlightedFontSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="HighlightedFontStyle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Regular</Value>
+    </Setting>
+    <Setting Name="ClearedRelativesShowColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName,Gender,DOB, Address
+</Value>
+    </Setting>
+    <Setting Name="ClearedRelativesColumnOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName,Gender,DOB, Address, Suburb, Post_Code</Value>
+    </Setting>
+    <Setting Name="ApplicationFormExtendedWidth" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1730</Value>
+    </Setting>
+    <Setting Name="FormLabelSelectChild" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Search / Select</Value>
+    </Setting>
+    <Setting Name="FormLabelSelectedRelationships" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Selected Relationship Details</Value>
+    </Setting>
+    <Setting Name="FormLabelRelationshipTree" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Identified Relationship Structure</Value>
+    </Setting>
+    <Setting Name="FormLabelRelativesWithClearences" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Identified Relatives with Clearances</Value>
+    </Setting>
+    <Setting Name="FormLocationOnScreenTop" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="FormLocationOnScreenLeft" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="ChildComboBoxDataTableColumns" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FullName, Gender, DOB, Family_Name,Person_SK, Relationship_Level, Anchor_Person_SK, Related_Person_SK,Related_Person_SK_Tree,Person_SK_Tree, Relatives Cleared,Person_SK_Tree_ID,Related_Person_SK_Tree_ID</Value>
+    </Setting>
+    <Setting Name="ApplicationMaleGenderIcon" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">boy.ico</Value>
+    </Setting>
+    <Setting Name="ApplicationFemaleGenderIcon" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">girl.ico</Value>
+    </Setting>
+    <Setting Name="ApplicationCurrentVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">v1.0.3</Value>
+    </Setting>
+    <Setting Name="ApplicationSecurityClearenceCleared" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Check16.ico</Value>
+    </Setting>
+    <Setting Name="ApplicationSecurityClearenceWarning" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cross16.ico</Value>
+    </Setting>
+    <Setting Name="ApplicationDataSuccessfullySelectedNotificationLine1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data successfully loaded.</Value>
+    </Setting>
+    <Setting Name="ApplicationDataSuccessfullySelectedNotificationLine2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Please select an individual from the Combo Box.</Value>
+    </Setting>
+    <Setting Name="ApplicationUnpackDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\GSGALE\</Value>
+    </Setting>
+    <Setting Name="FamilyTreeControlMinimumAgeToDisplay" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

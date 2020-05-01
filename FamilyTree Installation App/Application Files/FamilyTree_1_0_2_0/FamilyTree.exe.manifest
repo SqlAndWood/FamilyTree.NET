@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FamilyTree.exe" version="1.0.2.0" publicKeyToken="f5c3571558b3d616" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\ODA_32.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FamilyTree" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FamilyTree.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FamilyTree.exe" size="290256">
+      <assemblyIdentity name="FamilyTree" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pBcknHzjA568QzsiFROycfTV2Wj1npnUZwOvidS710s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.dll" size="462336">
+      <assemblyIdentity name="Ionic.Zip" version="1.9.1.8" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Oz5UFoLkjz/Shy+FoGJ42i8+eHfulW2om5DXMqHqoL0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.WinControls.dll" size="3484160">
+      <assemblyIdentity name="Telerik.WinControls" version="2017.3.912.40" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tKzK5LdCQvU8POB5SkAgz0IoQdZL7re5sT54dlmkVhs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.WinControls.GridView.dll" size="1657856">
+      <assemblyIdentity name="Telerik.WinControls.GridView" version="2017.3.912.40" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FdOvTEp+mRh/+2ok1mq/psnuEBWgZb8dfgJ7I8f9tjc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.WinControls.UI.dll" size="4896256">
+      <assemblyIdentity name="Telerik.WinControls.UI" version="2017.3.912.40" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gB118z1UZ6Z9ix6BSYfo7sVRkPw3u1Trk2VYiCSRDxs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TelerikCommon.dll" size="343040">
+      <assemblyIdentity name="TelerikCommon" version="2017.3.912.40" publicKeyToken="5BB2A467CBEC794E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sGJihJQdlVmnILeoz3Ts4WJzJ6Jo0naIMRYfe8u6nPU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FamilyTree.exe.config" size="10774">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NB8NTcZADowonkJrCtw3YQIywBX59x+3Ko/8N9FDFys=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\boy.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VPDkSTPByXT6a4og/zWTBw6M/VJ/VjiuhNGzyjqSzeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Check16.ico" size="1150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4/YaPdcB2325vD6RPjls8p+G5kJxZPH4rlslRYh+CF0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Cross16.ico" size="1150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CvmZK1mkIrTvHNsniWQqBxvicAxhUBfN1R4Nrw9qxhQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\girl.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O/NKIb1XL/sshMoCSvqbzZYj3fvw1DNer8UHTa7Pu7U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\ODA_32.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3psxhA3+Cron9prXb+I+fsazbvpEk0eJQTj6WI3mUQs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ADMINSRVAD\WoodA01" issuerKeyHash="069a6dae703bae56d3c2aebd85fbc9e6a3be38f9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0K6K6/3otuqghqSatJbFs1mnZyTIUS/1dseMizFGQUY=</DigestValue></Reference></SignedInfo><SignatureValue>YMhPvTk8NmMhJzVCQjc9CaCUyzNcSwx7rfzIWhSjZ0JRHDOBQT7G/ecqlttjDzk71zkh8ev8UleW6iNUIfRJTUWZthnWyPNanRlZ8axr9GMepkSLA+q2yNTxPCy6tVCudqx6q0dXdQF09r0id8Um9uN4+Eu1qK951k9FYh97xIY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>u+rifDnzCimz96YEoJTO/wQvbHb+ihlcqe5WvhIswG7Y7/gpVBkQ+zfnz3MmkNWC+KgftecAd0uu1I8QpY6KyyEBiv9E1KDCFUea+FsxlLWYeRnAfF85J7AfdIzkOsmht6PMmlP2sHqStRAPYu82WvCSJCY+b/gyG/p3iuU71uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="464146318b8cc776f52f51c82467a759b3c596b49aa486a0eab6e8fdeb8aaed0" Description="" Url=""><as:assemblyIdentity name="FamilyTree.exe" version="1.0.2.0" publicKeyToken="f5c3571558b3d616" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADMINSRVAD\WoodA01</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Qd31tA8k0d+tpieUAuapRH7X0gv5MC2Rf5SZx8hhJcE=</DigestValue></Reference></SignedInfo><SignatureValue>PcAvZSdlWc6hX3eB19Q+ocRdEY0YJoIk30vRjAq2Agv8/SjvMkN023wK70JUU1v31xM9x75ERzVq8aStSFadSgreLHk2Ptom/B5dJTQNx4p7QsQGSv+NqxOSCcrs1dy71WRuH5qjKgQ3p6h5sBjJLmrmI4D2O9H3qWj5kkjOH2E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>u+rifDnzCimz96YEoJTO/wQvbHb+ihlcqe5WvhIswG7Y7/gpVBkQ+zfnz3MmkNWC+KgftecAd0uu1I8QpY6KyyEBiv9E1KDCFUea+FsxlLWYeRnAfF85J7AfdIzkOsmht6PMmlP2sHqStRAPYu82WvCSJCY+b/gyG/p3iuU71uk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQLWZQgdtysIhH8Xj0hSyZ1zANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQAQQBEAE0ASQBOAFMAUgBWAEEARABcAFcAbwBvAGQAQQAwADEwHhcNMTcwOTEzMDM0NjE3WhcNMTgwOTEzMDk0NjE3WjAvMS0wKwYDVQQDHiQAQQBEAE0ASQBOAFMAUgBWAEEARABcAFcAbwBvAGQAQQAwADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALvq4nw58wops/emBKCUzv8EL2x2/ooZXKnuVr4SLMBu2O/4KVQZEPs3589zJpDVgvioH7XnAHdLrtSPEKWOisshAYr/RNSgwhVHmvhbMZS1mHkZwHxfOSewH3SM5DrJobejzJpT9rB6krUQD2LvNlrwkiQmPm/4Mhv6d4rlO9bpAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAOn7a/gVNkYVlKeBy6mvEGB82GJ7i6h9Z+4T/4K5++G2SY6N2ljr8GbEMAI7zFK5eekL5hvN6+1ss1cvF/jRAdsJ1FIuJKC9x0ZmAF73gScpvRwQRxG1vZCeIxLkGlw9qRK0hxYzi5Y6kX0BqO1YjkGyAwmvl01ogrMYv/bnTwSU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
